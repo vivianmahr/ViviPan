@@ -1,44 +1,26 @@
-.nav li {
-    text-align: center;
+header a{
+    text-decoration: none;
 }
 
-#navbar-logo {
-    height: 0;
+header a img{
+    height: 100px; /* define nicely later*/
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    padding-top: 60px;
-    background: #000000;
-    background: -moz-linear-gradient(top, #000000 0%, #0c091d 33%, #612705 96%, #612705 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #000000), color-stop(33%, #0c091d), color-stop(96%, #612705), color-stop(100%, #612705));
-    background: -webkit-linear-gradient(top, #000000 0%, #0c091d 33%, #612705 96%, #612705 100%);
-    background: -o-linear-gradient(top, #000000 0%, #0c091d 33%, #612705 96%, #612705 100%);
-    background: -ms-linear-gradient(top, #000000 0%, #0c091d 33%, #612705 96%, #612705 100%);
-    background: linear-gradient(to bottom, #000000 0%, #0c091d 33%, #612705 96%, #612705 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url('../images/sky.png'), 
+                url('../images/mountains.png'),
+                #f0ae66;
+    background-repeat: repeat-x, repeat-x;
+    background-position: top, bottom;
 }
 
-@media (max-width: 979px) {
-  body {
-    padding-top: 0px;
-  }
-}
-
-.navbar {
-    background: #0C091D;
-    border-bottom: 2px solid #4B1300;
-    border-bottom: 2px solid #5B64A0;
-}
-
-.navbar-default .navbar-nav li a{
-    color: #AEB9F0  ;
-}
-.navbar-default .navbar-nav > .active > a {
-    background-color: #4B1300;
-    color: #AEB9F0;
-}
-
-.red {
-    background-color: #F00;
+#content #center { 
+    background: #9d4719;
+    border: 8px solid #5e2b0f;
+    margin: auto;
 }
