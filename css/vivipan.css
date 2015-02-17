@@ -1,26 +1,60 @@
-header a{
-    text-decoration: none;
-}
-
-header a img{
-    height: 100px; /* define nicely later*/
-}
-
+@font-face {
+  font-family: Arista;
+  src: url("../fonts/Arista2.0.ttf"); }
+@font-face {
+  font-family: Latine;
+  src: url("../fonts/Latine.ttf"); }
 body, html {
-    height: 100%;
-    width: 100%;
-}
+  height: 100%;
+  width: 100%; }
+
+h1, h2, h3, h4, h5, a {
+  font-family: Arista, "Trebuchet MS", Helvetica, sans-serif; }
+
+h6, p {
+  font-family: Latine, "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+header {
+  text-align: center;
+  margin: 2%; }
+  header a {
+    text-decoration: none; }
+    header a img {
+      height: 100px;
+      /* define nicely later*/ }
+
+#search {
+  margin: auto;
+  width: 33%; }
 
 body {
-    background: url('../images/sky.png'), 
-                url('../images/mountains.png'),
-                #f0ae66;
-    background-repeat: repeat-x, repeat-x;
-    background-position: top, bottom;
-}
+  background: url("../images/sky.png"), url("../images/mountains.png"), #f0ae66;
+  background-repeat: repeat-x, repeat-x;
+  background-position: top, bottom; }
 
-#content #center { 
-    background: #9d4719;
-    border: 8px solid #5e2b0f;
-    margin: auto;
-}
+#content {
+  margin: 2%;
+  background: #9d4719;
+  border: 10px solid #5e2b0f;
+  border-radius: 30px;
+  position: relative; }
+  #content #center {
+    background: #FFFFFF;
+    margin: 0 15%;
+    width: 70%; }
+  #content .center-wrapper {
+    border-left: 10px solid #5e2b0f;
+    border-right: 10px solid #5e2b0f; }
+    #content .center-wrapper h2, #content .center-wrapper p {
+      margin: 0; }
+  #content .sidebar {
+    width: 15%;
+    top: 0;
+    bottom: 0;
+    position: absolute; }
+  #content #sidebar-left {
+    left: 0; }
+  #content #sidebar-right {
+    right: 0; }
+
+/*# sourceMappingURL=vivipan.css.map */

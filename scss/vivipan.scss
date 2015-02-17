@@ -1,0 +1,95 @@
+$black: #000000;
+$white: #FFFFFF;
+$red: #FF0000; // Always there for debugging 
+
+$b1: #5e2b0f;
+$b2: #9d4719;
+$b3: #b56e2a;
+$b4: #ebb967;
+$b5: #f0ae66;
+$b6: #fadbb5;
+
+@font-face {
+    font-family: Arista;
+    src: url("../fonts/Arista2.0.ttf");
+}
+
+@font-face {
+    font-family: Latine;
+    src: url("../fonts/Latine.ttf");
+}
+
+$arista-stack: Arista, "Trebuchet MS", Helvetica, sans-serif;
+$latine-stack: Latine, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+$brown-border: 10px solid $b1;
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, a {
+    font-family: $arista-stack;
+}
+
+h6, p {
+    font-family: $latine-stack;
+}
+
+
+header {
+    text-align: center;
+    margin: 2%;
+    a {
+        text-decoration: none;    
+        img {
+            height: 100px; /* define nicely later*/    
+        }
+    }
+}
+
+#search {
+    margin: auto;
+    width: 33%;
+}
+
+body {
+    background: url('../images/sky.png'), 
+                url('../images/mountains.png'),
+                #f0ae66;
+    background-repeat: repeat-x, repeat-x;
+    background-position: top, bottom;
+}
+
+#content { 
+    margin: 2%;
+    background: $b2;
+    border: $brown-border;
+    border-radius: 30px;
+    position: relative;
+    #center { 
+        background: $white;
+        margin: 0 15%;
+        width: 70%;
+    }
+    .center-wrapper{
+        border-left:$brown-border;
+        border-right:$brown-border;
+        h2, p{
+            margin: 0;
+        }
+    }
+    .sidebar {
+        width: 15%;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
+    #sidebar-left {
+        left: 0;
+    }
+    #sidebar-right {
+        right: 0;
+    }
+}
