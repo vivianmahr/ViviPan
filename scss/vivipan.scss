@@ -136,6 +136,7 @@ body {
     .center-wrapper{
         border-left:$brown-border;
         border-right:$brown-border;
+        bottom: 0;
         h2, p{
             margin: 0;
         }
@@ -264,6 +265,71 @@ body {
         .image.calign {
             display: block;
             margin: 1em auto;
+        }
+    }
+}
+
+.recipe {
+    background: $b6;
+    border: 10px solid $b5;
+    border-radius: 30px;
+    margin: 1.5em;
+    padding: 1em 1.5em;
+    color: $b1;
+    h2 {
+        font-size: 5em;
+        line-height: 1em;
+    }
+    h4 {
+        margin: 0 inherit;
+        font-size: 2em;
+        line-height: 1em;
+        padding: .25em 0;
+    }
+    li::before {
+        font-family: 'Glyphicons Halflings';
+        content: '\e013';
+        line-height: 2em;       
+        text-align: center;
+        height: 2em;
+        width: 2em;
+        left: -3em;
+        border-radius: 1em;
+        margin: auto 0;
+        top: 0;
+        bottom: 0;
+        background: $b4;
+        display: inline-block;
+        position: absolute;
+    }
+    li.checked {
+        color: $b4;
+    }
+    li.checked::before {
+        background: $b1;
+    }
+    ul {
+        font-family: $latine-stack;
+        margin: 0 inherit;
+        list-style-type: none;
+        li {
+            position: relative;  
+            line-height: 2em; 
+        }
+        li::before {
+            line-height: 1.75em;  
+            height: 1.75em;
+            width: 1.75em;
+            left: -2em;
+        }
+    }
+    ol {
+        font-family: $latine-stack;
+        margin: 0 inherit;
+        list-style-type: none;
+        li {
+            position: relative;   
+            padding: .5em 0;     
         }
     }
 }

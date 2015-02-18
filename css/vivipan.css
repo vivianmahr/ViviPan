@@ -83,7 +83,8 @@ body {
     width: 70%; }
   #content .center-wrapper {
     border-left: 10px solid #5e2b0f;
-    border-right: 10px solid #5e2b0f; }
+    border-right: 10px solid #5e2b0f;
+    bottom: 0; }
     #content .center-wrapper h2, #content .center-wrapper p {
       margin: 0; }
   #content .sidebar {
@@ -179,5 +180,59 @@ body {
   .post .entry .image.calign {
     display: block;
     margin: 1em auto; }
+
+.recipe {
+  background: #fadbb5;
+  border: 10px solid #f0ae66;
+  border-radius: 30px;
+  margin: 1.5em;
+  padding: 1em 1.5em;
+  color: #5e2b0f; }
+  .recipe h2 {
+    font-size: 5em;
+    line-height: 1em; }
+  .recipe h4 {
+    margin: 0 inherit;
+    font-size: 2em;
+    line-height: 1em;
+    padding: .25em 0; }
+  .recipe li::before {
+    font-family: 'Glyphicons Halflings';
+    content: '\e013';
+    line-height: 2em;
+    text-align: center;
+    height: 2em;
+    width: 2em;
+    left: -3em;
+    border-radius: 1em;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    background: #ebb967;
+    display: inline-block;
+    position: absolute; }
+  .recipe li.checked {
+    color: #ebb967; }
+  .recipe li.checked::before {
+    background: #5e2b0f; }
+  .recipe ul {
+    font-family: Latine, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin: 0 inherit;
+    list-style-type: none; }
+    .recipe ul li {
+      position: relative;
+      line-height: 2em; }
+    .recipe ul li::before {
+      line-height: 1.75em;
+      height: 1.75em;
+      width: 1.75em;
+      left: -2em; }
+  .recipe ol {
+    font-family: Latine, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin: 0 inherit;
+    list-style-type: none; }
+    .recipe ol li {
+      position: relative;
+      padding: .5em 0; }
 
 /*# sourceMappingURL=vivipan.css.map */
