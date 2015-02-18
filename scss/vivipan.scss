@@ -11,7 +11,7 @@ $b6: #fadbb5;
 
 @mixin text-outline ($color, $thickness) {
     // text-strokes
-    $corner: $thickness / 1.41; // sqrt(2)
+    $corner: $thickness / 1.41; // sqrt(2), 45 deg on radius circle of 1 
     text-shadow: (-$corner) (-$corner) 0 $color,
                  $corner (-$corner) 0 $color,
                  (-$corner) $corner 0 $color,
@@ -273,7 +273,7 @@ body {
     background: $b6;
     border: 10px solid $b5;
     border-radius: 30px;
-    margin: 1.5em;
+    margin: 0 1.5em;
     padding: 1em 1.5em;
     color: $b1;
     h2 {
@@ -333,9 +333,59 @@ body {
         }
     }
 }
-
-
-
+.navi-links {
+    clear: both;
+    height: 4.5em;
+    padding: 0 2.5em;
+    a {
+        color: $b5;
+        text-decoration: underline;
+    }
+    a:visited {
+        color: $b1;
+    }
+    a:hover {
+        color: $white;
+    }
+    a:active {
+        color: $black;
+    }
+    div {
+        display: inline-block;
+        position: relative;   
+        a {
+            font-size: 2em;
+            line-height: 2.25em;
+        }
+    }
+    a span {
+        line-height: 1.5em;       
+        text-align: center;
+        height: 1.5em;
+        width: 1.5em;
+        border-radius: 1em;
+        margin: auto 0;
+        top: 0;
+        bottom: 0;
+        background: $b1;
+        display: inline-block;
+        position: absolute;
+    }
+    .older-link {
+        float: right;
+        margin-right: 3em; 
+        a span {
+            right: -2em;
+        }
+    }
+    .newer-link {
+        float: left;
+        margin-left: 3em;
+        a span {
+            left: -2em;
+        }
+    }
+}
 
 
 

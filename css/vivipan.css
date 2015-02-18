@@ -185,7 +185,7 @@ body {
   background: #fadbb5;
   border: 10px solid #f0ae66;
   border-radius: 30px;
-  margin: 1.5em;
+  margin: 0 1.5em;
   padding: 1em 1.5em;
   color: #5e2b0f; }
   .recipe h2 {
@@ -234,5 +234,47 @@ body {
     .recipe ol li {
       position: relative;
       padding: .5em 0; }
+
+.navi-links {
+  clear: both;
+  height: 4.5em;
+  padding: 0 2.5em; }
+  .navi-links a {
+    color: #f0ae66;
+    text-decoration: underline; }
+  .navi-links a:visited {
+    color: #5e2b0f; }
+  .navi-links a:hover {
+    color: #FFFFFF; }
+  .navi-links a:active {
+    color: #000000; }
+  .navi-links div {
+    display: inline-block;
+    position: relative; }
+    .navi-links div a {
+      font-size: 2em;
+      line-height: 2.25em; }
+  .navi-links a span {
+    line-height: 1.5em;
+    text-align: center;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 1em;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    background: #5e2b0f;
+    display: inline-block;
+    position: absolute; }
+  .navi-links .older-link {
+    float: right;
+    margin-right: 3em; }
+    .navi-links .older-link a span {
+      right: -2em; }
+  .navi-links .newer-link {
+    float: left;
+    margin-left: 3em; }
+    .navi-links .newer-link a span {
+      left: -2em; }
 
 /*# sourceMappingURL=vivipan.css.map */
