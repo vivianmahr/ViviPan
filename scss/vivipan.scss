@@ -129,6 +129,7 @@ body {
     border-radius: 30px;
     margin: 2%;
     position: relative;
+    overflow: hidden;
     #center { 
         margin: 0 15%;
         width: 70%;
@@ -142,6 +143,10 @@ body {
         }
     }
     .sidebar {
+        width: 15%;
+        top: 0;
+        bottom: 0;
+        position: absolute;
         a {
             color: $b5;
             font-family: $latine-stack; 
@@ -154,18 +159,61 @@ body {
             color: $white;
         }
         a:active {
-            color: $black;
+            color: $b1;
         }
-        width: 15%;
-        top: 0;
-        bottom: 0;
-        position: absolute;
+        .sidebar-header {
+            background: url('../images/dark-dither.png');
+            border-bottom: $brown-border;
+            width: 100%;
+            padding: 0 1.5em;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        h3, h4 {
+            margin: 0;
+            color: $b6;
+            @include text-outline($b1, 2px);
+        }
+        h3 {
+            font-size: 3em;
+        }
+        h4 {
+            font-size: 1.5em;
+        }
     }
     #sidebar-left {
         left: 0;
+        h4 {
+            padding-top: 1em;
+        }
+        .left-wrapper {
+            padding: 0 1.5em;
+        }
+        ul {
+            color: $b6;
+            padding-left: 1em;
+            list-style: disc;
+            li {
+                padding-top: .4em;
+            }
+        }
     }
     #sidebar-right {
         right: 0;
+        a {
+            padding: .5em 1em;
+            font-family: $arista-stack;
+            font-size: 1.5em;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        li {
+            border-bottom: 3px solid $b1;         
+        }
     }
 }
 
@@ -182,7 +230,7 @@ body {
         color: $white;
     }
     a:active {
-        color: $black;
+        color: $b1;
     }
     .header {
         background: url('../images/dark-dither.png');
@@ -202,7 +250,8 @@ body {
         }
         a {
             line-height: 1em;
-            font-size: 2em;
+            font-size: 1.5em;
+            font-family: $arista-stack; 
         }
         a:visited {
             color: $b3;
@@ -211,7 +260,7 @@ body {
             color: $white;
         }
         a:active {
-            color: $black;
+            color: $b1;
         }
     }
     .entry {
@@ -348,7 +397,7 @@ body {
         color: $white;
     }
     a:active {
-        color: $black;
+        color: $b1;
     }
     div {
         display: inline-block;
