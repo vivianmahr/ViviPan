@@ -17,15 +17,57 @@ h6, p {
 header {
   text-align: center;
   margin: 2%; }
-  header a {
-    text-decoration: none; }
-    header a img {
-      height: 100px;
-      /* define nicely later*/ }
+  header img {
+    height: 100px;
+    /* define nicely later*/ }
 
-#search {
+#search-bar {
   margin: auto;
-  width: 33%; }
+  width: 25%;
+  border: 5px solid #b56e2a;
+  border-radius: 2em;
+  background: #FFFFFF;
+  position: relative; }
+  #search-bar #search {
+    height: 100%;
+    width: 100%; }
+  #search-bar .left {
+    width: auto;
+    overflow: hidden;
+    padding-left: .5em; }
+    #search-bar .left input {
+      border: none;
+      font-family: Latine, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      border-bottom-left-radius: 2em;
+      border-top-left-radius: 2em;
+      width: 100%;
+      color: #f0ae66;
+      color: #b56e2a; }
+    #search-bar .left ::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: #f0ae66; }
+    #search-bar .left :-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #f0ae66;
+      opacity: 1; }
+    #search-bar .left ::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #f0ae66;
+      opacity: 1; }
+    #search-bar .left :-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: #f0ae66; }
+    #search-bar .left input:focus {
+      outline: none; }
+  #search-bar .right button {
+    width: 2.5em;
+    float: right;
+    border: none;
+    border-left: 5px solid #b56e2a;
+    margin: 0;
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+    background: #fadbb5; }
 
 body {
   background: url("../images/sky.png"), url("../images/mountains.png"), #f0ae66;
@@ -39,7 +81,6 @@ body {
   border-radius: 30px;
   position: relative; }
   #content #center {
-    background: #FFFFFF;
     margin: 0 15%;
     width: 70%; }
   #content .center-wrapper {
@@ -56,5 +97,25 @@ body {
     left: 0; }
   #content #sidebar-right {
     right: 0; }
+
+.post .header {
+  background: url("../images/dark-dither.png");
+  padding: 0 0 1.5em 2.5em;
+  border-bottom: 10px solid #5e2b0f; }
+  .post .header h2 {
+    color: #fadbb5;
+    font-size: 5em;
+    line-height: 1em;
+    text-shadow: -2.12766px -2.12766px 0 #5e2b0f, 2.12766px -2.12766px 0 #5e2b0f, -2.12766px 2.12766px 0 #5e2b0f, 2.12766px 2.12766px 0 #5e2b0f, -3px 0 0 #5e2b0f, 3px 0 0 #5e2b0f, 0 -3px 0 #5e2b0f, 0 3px 0 #5e2b0f; }
+  .post .header h6 {
+    color: #b56e2a;
+    margin: 0;
+    padding-left: 2.5em;
+    line-height: 2em; }
+  .post .header a {
+    line-height: 1em;
+    color: #f0ae66;
+    font-size: 2em;
+    text-decoration: underline; }
 
 /*# sourceMappingURL=vivipan.css.map */
