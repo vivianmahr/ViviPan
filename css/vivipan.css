@@ -65,7 +65,8 @@ header {
     border-top-right-radius: 2em;
     color: #5e2b0f;
     float: right;
-    width: 2.5em; }
+    width: 2.5em;
+    height: 1.55em; }
 
 body {
   background: url("../images/sky.png"), url("../images/mountains.png"), #f0ae66;
