@@ -1,3 +1,4 @@
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 @font-face {
   font-family: Arista;
   src: url("../fonts/Arista2.0.ttf"); }
@@ -5,7 +6,6 @@
   font-family: Latine;
   src: url("../fonts/Latine.ttf"); }
 body, html {
-  height: 100%;
   width: 100%; }
 
 h1, h2, h3, h4, h5, a {
@@ -26,6 +26,7 @@ header {
   border: 5px solid #b56e2a;
   border-radius: 2em;
   margin: auto;
+  min-width: 23rem;
   width: 25%; }
   #search-bar #search {
     height: 100%;
@@ -93,7 +94,8 @@ body {
     width: 15%;
     top: 0;
     bottom: 0;
-    position: absolute; }
+    position: absolute;
+    overflow: hidden; }
     #content .sidebar a {
       color: #f0ae66;
       font-family: Latine, "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -107,7 +109,7 @@ body {
     #content .sidebar .sidebar-header {
       background: url("../images/dark-dither.png");
       border-bottom: 10px solid #5e2b0f;
-      width: 100%;
+      width: 200%;
       padding: 0 1.5em; }
     #content .sidebar ul {
       padding: 0;
@@ -315,5 +317,18 @@ body {
     margin-left: 3em; }
     .navi-links .newer-link a span {
       left: -2em; }
+
+@media (max-width: 64em) {
+  body {
+    background: red; }
+
+  .sidebar .sidebar-header {
+    font-size: .75em; } }
+@media (max-width: 54em) {
+  body {
+    background: green; }
+
+  .sidebar {
+    display: none; } }
 
 /*# sourceMappingURL=vivipan.css.map */

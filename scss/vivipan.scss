@@ -22,6 +22,9 @@ $b6: #fadbb5;
                  0 $thickness 0 $color;
 }
 
+//@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
 @font-face {
     font-family: Arista;
     src: url("../fonts/Arista2.0.ttf");
@@ -38,7 +41,6 @@ $latine-stack: Latine, "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $brown-border: 10px solid $b1;
 
 body, html {
-    height: 100%;
     width: 100%;
 }
 
@@ -65,7 +67,7 @@ header {
     border: 5px solid $b3;
     border-radius: 2em;
     margin: auto;
-    // min width 
+    min-width: 23rem;
     width: 25%;
     #search {
         height: 100%;
@@ -148,6 +150,7 @@ body {
         top: 0;
         bottom: 0;
         position: absolute;
+        overflow: hidden;
         a {
             color: $b5;
             font-family: $latine-stack; 
@@ -165,7 +168,7 @@ body {
         .sidebar-header {
             background: url('../images/dark-dither.png');
             border-bottom: $brown-border;
-            width: 100%;
+            width: 200%;
             padding: 0 1.5em;
         }
         ul {
@@ -439,16 +442,33 @@ body {
 
 
 
+@media (max-width: 64em) {
+    body {
+        background: red;
+    }
+    .sidebar {
+        .sidebar-header {
+            font-size: .75em; 
+        }
+    }
+}
+
+@media (max-width: 54em) {
+    body {
+        background: green;
+    }
+    .sidebar {
+        display: none;
+    }
+}
 
 
 
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi){ 
 
-
-
-
-
-
-
+}
 
 
 
