@@ -22,9 +22,6 @@ $b6: #fadbb5;
                  0 $thickness 0 $color;
 }
 
-//@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
-@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
-
 @font-face {
     font-family: Arista;
     src: url("../fonts/Arista2.0.ttf");
@@ -69,6 +66,8 @@ header {
     margin: auto;
     min-width: 23rem;
     width: 25%;
+    overflow: hidden;
+    height: 3rem;
     #search {
         height: 100%;
         width: 100%;
@@ -108,12 +107,9 @@ header {
             background: $b6;
             border: none;
             border-left: 5px solid $b3;
-            border-bottom-right-radius: 2em; 
-            border-top-right-radius: 2em; 
             color: $b1;
             float: right;
             width: 2.5em;
-            height: 1.55em;
         }
     }
 }
@@ -138,8 +134,8 @@ body {
         width: 70%;
     }
     .center-wrapper{
-        border-left:$brown-border;
-        border-right:$brown-border;
+        border-left: $brown-border;
+        border-right: $brown-border;
         bottom: 0;
         h2, p{
             margin: 0;
@@ -386,14 +382,97 @@ body {
         }
     }
 }
+
 .navi-links {
     clear: both;
     height: 4.5em;
     padding: 0 2.5em;
-    a {
-        color: $b5;
-        text-decoration: underline;
+    .right {
+        float: right;
+        margin-right: 3em; 
+        a .glyphicon {
+            right: -2em;
+        }
     }
+    .left { 
+        float: left;
+        margin-left: 3em;
+        a .glyphicon {
+            left: -2em;
+        }
+    }
+    .circle-div {
+        display: inline-block;
+        position: relative;   
+        a {
+            font-size: 2em;
+            line-height: 2.25em;
+        }
+        a {
+            color: $b5;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: $b1;
+        }
+        a:hover {
+            color: $white;
+        }
+        a:active {
+            color: $b1;
+        }
+        a .glyphicon {
+            line-height: 1.5em;       
+            text-align: center;
+            height: 1.5em;
+            width: 1.5em;
+            border-radius: 1em;
+            margin: auto 0;
+            top: 0;
+            bottom: 0;
+            background: $b1;
+            display: inline-block;
+            position: absolute;
+        }
+        .right {
+            float: right;
+            margin-right: 3em; 
+            a .glyphicon {
+                right: -2em;
+            }
+        }
+        .left {
+            float: left;
+            margin-left: 3em;
+            a .glyphicon {
+                left: -2em;
+            }
+        }
+    }
+}
+
+.unshown {
+    margin-top: -4em;
+    .circle-div a {
+        color: $b1;
+        font-size: 2.2em;
+        display: inline block;
+        .glyphicon {
+            text-align: center;
+            font-size: .75em;
+            color: $b6;
+        }
+    }
+    .circle-div a .glyphicon::before {
+        font-size: .9em;
+    }
+    .left a .glyphicon::before {
+        padding-right: .45em;
+    }
+    .right a .glyphicon::before {
+        padding-left: .27em;
+    }
+
     a:visited {
         color: $b1;
     }
@@ -403,76 +482,12 @@ body {
     a:active {
         color: $b1;
     }
-    div {
-        display: inline-block;
-        position: relative;   
-        a {
-            font-size: 2em;
-            line-height: 2.25em;
-        }
+    display: none;
+    .left .glyphicon {
+        padding-left: .3em;
     }
-    a span {
-        line-height: 1.5em;       
-        text-align: center;
-        height: 1.5em;
-        width: 1.5em;
-        border-radius: 1em;
-        margin: auto 0;
-        top: 0;
-        bottom: 0;
-        background: $b1;
-        display: inline-block;
-        position: absolute;
+    .right .glyphicon {
+        padding-right: .3em;
     }
-    .older-link {
-        float: right;
-        margin-right: 3em; 
-        a span {
-            right: -2em;
-        }
-    }
-    .newer-link {
-        float: left;
-        margin-left: 3em;
-        a span {
-            left: -2em;
-        }
-    }
-}
-
-
-
-@media (max-width: 64em) {
-    body {
-        background: red;
-    }
-    .sidebar {
-        .sidebar-header {
-            font-size: .75em; 
-        }
-    }
-}
-
-@media (max-width: 54em) {
-    body {
-        background: green;
-    }
-    .sidebar {
-        display: none;
-    }
-}
-
-
-
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi){ 
 
 }
-
-
-
-
-
-
-

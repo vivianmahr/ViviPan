@@ -1,4 +1,3 @@
-@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 @font-face {
   font-family: Arista;
   src: url("../fonts/Arista2.0.ttf"); }
@@ -27,7 +26,9 @@ header {
   border-radius: 2em;
   margin: auto;
   min-width: 23rem;
-  width: 25%; }
+  width: 25%;
+  overflow: hidden;
+  height: 3rem; }
   #search-bar #search {
     height: 100%;
     width: 100%; }
@@ -62,12 +63,9 @@ header {
     background: #fadbb5;
     border: none;
     border-left: 5px solid #b56e2a;
-    border-bottom-right-radius: 2em;
-    border-top-right-radius: 2em;
     color: #5e2b0f;
     float: right;
-    width: 2.5em;
-    height: 1.55em; }
+    width: 2.5em; }
 
 body {
   background: url("../images/sky.png"), url("../images/mountains.png"), #f0ae66;
@@ -280,55 +278,80 @@ body {
   clear: both;
   height: 4.5em;
   padding: 0 2.5em; }
-  .navi-links a {
-    color: #f0ae66;
-    text-decoration: underline; }
-  .navi-links a:visited {
-    color: #5e2b0f; }
-  .navi-links a:hover {
-    color: #FFFFFF; }
-  .navi-links a:active {
-    color: #5e2b0f; }
-  .navi-links div {
-    display: inline-block;
-    position: relative; }
-    .navi-links div a {
-      font-size: 2em;
-      line-height: 2.25em; }
-  .navi-links a span {
-    line-height: 1.5em;
-    text-align: center;
-    height: 1.5em;
-    width: 1.5em;
-    border-radius: 1em;
-    margin: auto 0;
-    top: 0;
-    bottom: 0;
-    background: #5e2b0f;
-    display: inline-block;
-    position: absolute; }
-  .navi-links .older-link {
+  .navi-links .right {
     float: right;
     margin-right: 3em; }
-    .navi-links .older-link a span {
+    .navi-links .right a .glyphicon {
       right: -2em; }
-  .navi-links .newer-link {
+  .navi-links .left {
     float: left;
     margin-left: 3em; }
-    .navi-links .newer-link a span {
+    .navi-links .left a .glyphicon {
       left: -2em; }
+  .navi-links .circle-div {
+    display: inline-block;
+    position: relative; }
+    .navi-links .circle-div a {
+      font-size: 2em;
+      line-height: 2.25em; }
+    .navi-links .circle-div a {
+      color: #f0ae66;
+      text-decoration: underline; }
+    .navi-links .circle-div a:visited {
+      color: #5e2b0f; }
+    .navi-links .circle-div a:hover {
+      color: #FFFFFF; }
+    .navi-links .circle-div a:active {
+      color: #5e2b0f; }
+    .navi-links .circle-div a .glyphicon {
+      line-height: 1.5em;
+      text-align: center;
+      height: 1.5em;
+      width: 1.5em;
+      border-radius: 1em;
+      margin: auto 0;
+      top: 0;
+      bottom: 0;
+      background: #5e2b0f;
+      display: inline-block;
+      position: absolute; }
+    .navi-links .circle-div .right {
+      float: right;
+      margin-right: 3em; }
+      .navi-links .circle-div .right a .glyphicon {
+        right: -2em; }
+    .navi-links .circle-div .left {
+      float: left;
+      margin-left: 3em; }
+      .navi-links .circle-div .left a .glyphicon {
+        left: -2em; }
 
-@media (max-width: 64em) {
-  body {
-    background: red; }
-
-  .sidebar .sidebar-header {
-    font-size: .75em; } }
-@media (max-width: 54em) {
-  body {
-    background: green; }
-
-  .sidebar {
-    display: none; } }
+.unshown {
+  margin-top: -4em;
+  display: none; }
+  .unshown .circle-div a {
+    color: #5e2b0f;
+    font-size: 2.2em;
+    display: inline block; }
+    .unshown .circle-div a .glyphicon {
+      text-align: center;
+      font-size: .75em;
+      color: #fadbb5; }
+  .unshown .circle-div a .glyphicon::before {
+    font-size: .9em; }
+  .unshown .left a .glyphicon::before {
+    padding-right: .45em; }
+  .unshown .right a .glyphicon::before {
+    padding-left: .27em; }
+  .unshown a:visited {
+    color: #5e2b0f; }
+  .unshown a:hover {
+    color: #FFFFFF; }
+  .unshown a:active {
+    color: #5e2b0f; }
+  .unshown .left .glyphicon {
+    padding-left: .3em; }
+  .unshown .right .glyphicon {
+    padding-right: .3em; }
 
 /*# sourceMappingURL=vivipan.css.map */
