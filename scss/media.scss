@@ -26,12 +26,14 @@
     header {
         padding: 1em;
     }
-
 }
 
 
 @media (max-width: 40em) {
     .post .header h2 {
+        font-size: 3.5em;
+    }
+    .recipe h2 {
         font-size: 3.5em;
     }
     .unshown {
@@ -54,19 +56,27 @@
 
 @media (max-width: 37em) {
     body{ 
-//        background: red;
+        background: red;
     }
     .unshown {
-        margin: -1.5em;
+        margin: -2em;
         padding: 0 7em;
-//        background: blue;
         height: 4em;
         .circle-div a .text{
             display: none;
         }
-        .circle-div a .glyphicon{
-            font-size: 1.5em;
+        .circle-div a {
+            .glyphicon {
+                font-size: 1.3em;   
+            }
         }
+    }
+    #content {
+        margin-top: 2em;
+        clear: both;
+    }
+    #search-bar {
+        margin-top: 1.5em;
     }
 }
 

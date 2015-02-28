@@ -324,7 +324,7 @@ body {
       float: left;
       margin-left: 3em; }
       .navi-links .circle-div .left a .glyphicon {
-        left: -2em; }
+        left: -1.25em; }
 
 .unshown {
   margin-top: -4em;
@@ -340,7 +340,8 @@ body {
   .unshown .circle-div a .glyphicon::before {
     font-size: .9em; }
   .unshown .left a .glyphicon::before {
-    padding-right: .45em; }
+    padding: 0;
+    padding-right: 1.7em; }
   .unshown .right a .glyphicon::before {
     padding-left: .27em; }
   .unshown a:visited {
@@ -350,7 +351,7 @@ body {
   .unshown a:active {
     color: #5e2b0f; }
   .unshown .left .glyphicon {
-    padding-left: .3em; }
+    padding-left: .25em; }
   .unshown .right .glyphicon {
     padding-right: .3em; }
 

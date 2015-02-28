@@ -19,6 +19,9 @@
   .post .header h2 {
     font-size: 3.5em; }
 
+  .recipe h2 {
+    font-size: 3.5em; }
+
   .unshown {
     margin-top: -3em; }
     .unshown .circle-div a {
@@ -32,13 +35,23 @@
     header #logo {
       display: none; } }
 @media (max-width: 37em) {
+  body {
+    background: red; }
+
   .unshown {
-    margin: -1.5em;
+    margin: -2em;
     padding: 0 7em;
     height: 4em; }
     .unshown .circle-div a .text {
       display: none; }
     .unshown .circle-div a .glyphicon {
-      font-size: 1.5em; } }
+      font-size: 1.3em; }
+
+  #content {
+    margin-top: 2em;
+    clear: both; }
+
+  #search-bar {
+    margin-top: 1.5em; } }
 
 /*# sourceMappingURL=media.css.map */
